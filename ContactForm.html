@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="/css/ContactForm.css">
+
+<title>Contact Form · Kabelo's Shisanyama Grill House</title>
+```
+<style>
+        body{
+            background-color: bisque;
+        
+        }
+    </style>
+</head>
+
+<body>
+
+```
+<!-- ================= HEADER ================= -->
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <a href="index.html" class="brand">
+
+            <img src="images/kabeloLogo.png"
+                 alt="Kabelo's Shisanyama Grill House Logo">
+
+            <div class="brand-text">
+                <h1>Kabelo's Shisanyama</h1>
+                <span>GRILL HOUSE</span>
+            </div>
+
+        </a>
+
+
+        <nav class="navigation">
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="AboutUs.html">About Us</a>
+                </li>
+
+                <li>
+                    <a href="PlacingOrder.html">Place Order</a>
+                </li>
+
+                <li>
+                    <a href="ContactUs.Html">Contact Us</a>
+                </li>
+
+                <li>
+                    <a href="ContactForm.html" class="active">
+                        Contact Form
+                    </a>
+                </li>
+
+                <li>
+                    <a href="WorkingHours.html">Working Hours</a>
+                </li>
+
+                <li>
+                    <a href="Menu.Html">Menu</a>
+                </li>
+
+                <li>
+                    <a href="Gallery.Html">Gallery</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- HERO  -->
+
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="hero-label">
+             GET IN TOUCH
+        </span>
+
+        <h2>Contact Form</h2>
+
+        <p>
+            Have a question, special request, or want to
+            make a reservation? Send us a message.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- MAIN CONTENT  -->
+
+<main class="main-content">
+
+
+    <!-- Introduction -->
+
+    <section class="intro-section">
+
+        <span class="section-label">
+            WE'D LOVE TO HEAR FROM YOU
+        </span>
+
+        <h2>Send Us a Message</h2>
+
+        <p>
+            Complete the form below and our team will
+            get back to you within 24 hours during
+            business days.
+        </p>
+
+    </section>
+
+
+    <!--  CONTACT AREA  -->
+
+    <section class="contact-layout">
+
+
+        <!-- Contact Form -->
+
+        <div class="form-card">
+
+            <div class="form-header">
+
+                <div class="form-icon">
+                    
+                </div>
+
+                <div>
+                    <h3>Contact Us</h3>
+
+                    <p>
+                        Please complete all required fields.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <form action="/submit-contact-form" method="post">
+
+                <input type="hidden"
+                       name="_csrf"
+                       value="dummy-token-2026-08-06">
+
+
+                <!-- Name and Email -->
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                            <span>*</span>
+                        </label>
+
+                        <input type="text"
+                               id="name"
+                               name="name"
+                               placeholder="e.g. Thabo Mokoena"
+                               autocomplete="name"
+                               required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                            <span>*</span>
+                        </label>
+
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               placeholder="you@example.com"
+                               autocomplete="email"
+                               required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Phone -->
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input type="tel"
+                           id="phone"
+                           name="phone"
+                           placeholder="+27 82 123 4567"
+                           autocomplete="tel">
+
+                </div>
+
+
+                <!-- Subject -->
+
+                <div class="form-group">
+
+                    <label for="subject">
+                        Subject
+                        <span>*</span>
+                    </label>
+
+                    <input type="text"
+                           id="subject"
+                           name="subject"
+                           placeholder="e.g. Reservation, Catering, General Inquiry"
+                           required>
+
+                </div>
+
+
+                <!-- Message -->
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                        <span>*</span>
+                    </label>
+
+                    <textarea id="message"
+                              name="message"
+                              rows="6"
+                              placeholder="Tell us how we can help you..."
+                              required></textarea>
+
+                </div>
+
+
+                <!-- Preferred Contact -->
+
+                <div class="form-group">
+
+                    <label for="preference">
+                        Preferred Contact Method
+                    </label>
+
+                    <select id="preference"
+                            name="preference">
+
+                        <option value="email">
+                            Email
+                        </option>
+
+                        <option value="phone">
+                            Phone
+                        </option>
+
+                        <option value="whatsapp">
+                            WhatsApp
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Privacy -->
+
+                <label class="checkbox-label">
+
+                    <input type="checkbox"
+                           name="consent"
+                           required>
+
+                    <span>
+                        I agree to be contacted regarding
+                        my enquiry.
+                    </span>
+
+                </label>
+
+
+                <!-- Submit -->
+
+                <button type="submit" class="submit-btn">
+
+                    Send Message
+
+                    <span>→</span>
+
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!--  SIDE INFORMATION  -->
+
+        <aside class="contact-sidebar">
+
+            <div class="sidebar-card">
+
+                <span class="section-label">
+                    NEED HELP?
+                </span>
+
+                <h3>
+                    Other Ways to Reach Us
+                </h3>
+
+                <p class="sidebar-intro">
+                    If you prefer not to use the form,
+                    you can contact us directly.
+                </p>
+
+
+                <!-- Phone -->
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        
+                    </div>
+
+                    <div>
+
+                        <span>Phone</span>
+
+                        <a href="tel:+27123456789">
+                            +27 12 345 6789
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Email -->
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        
+                    </div>
+
+                    <div>
+
+                        <span>Email</span>
+
+                        <a href="mailto:info@kabelosshisanyamagrillhouse.com">
+                            info@kabelosshisanyamagrillhouse.com
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Location -->
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        
+                    </div>
+
+                    <div>
+
+                        <span>Location</span>
+
+                        <p>
+                            Corner of Vilakazi &amp;
+                            Mkhize Street, Soweto
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Hours -->
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        
+                    </div>
+
+                    <div>
+
+                        <span>Working Hours</span>
+
+                        <p>
+                            Monday – Thursday<br>
+                            11:00 AM – 9:00 PM
+                        </p>
+
+                        <p>
+                            Friday – Saturday<br>
+                            11:00 AM – 11:00 PM
+                        </p>
+
+                        <p>
+                            Sunday<br>
+                            12:00 PM – 8:00 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Links -->
+
+            <div class="quick-card">
+
+                <h3>Looking for something else?</h3>
+
+                <a href="Menu.Html">
+                     View Our Menu
+                </a>
+
+                <a href="PlacingOrder.html">
+                     Place an Order
+                </a>
+
+                <a href="WorkingHours.html">
+                     View Working Hours
+                </a>
+
+            </div>
+
+        </aside>
+
+    </section>
+
+
+    <!--  RESPONSE NOTICE  -->
+
+    <section class="response-notice">
+
+        <div class="notice-icon">
+            ⏱
+        </div>
+
+        <div>
+
+            <strong>
+                We respond within 24 hours
+            </strong>
+
+            <p>
+                Messages received during business days
+                are normally answered within 24 hours.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!--  CTA  -->
+
+    <section class="cta-section">
+
+        <span class="section-label">
+            KABELO'S SHISANYAMA
+        </span>
+
+        <h2>
+            Hungry? Explore Our Menu.
+        </h2>
+
+        <p>
+            Discover our selection of delicious grilled
+            meats, seafood, sides and traditional dishes.
+        </p>
+
+        <div class="cta-buttons">
+
+            <a href="Menu.Html"
+               class="btn btn-primary">
+                Explore Menu
+            </a>
+
+            <a href="PlacingOrder.html"
+               class="btn btn-secondary">
+                Place an Order
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!--  FOOTER  -->
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+
+        <div class="footer-brand">
+
+            <h3>
+                Kabelo's Shisanyama
+            </h3>
+
+            <p>
+                Authentic South African braai,
+                prepared with passion.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h4>Quick Links</h4>
+
+            <a href="index.html">Home</a>
+
+            <a href="AboutUs.html">
+                About Us
+            </a>
+
+            <a href="Menu.Html">
+                Menu
+            </a>
+
+            <a href="Gallery.Html">
+                Gallery
+            </a>
+
+        </div>
+
+
+        <div class="footer-contact">
+
+            <h4>Contact</h4>
+
+            <p>
+                 Soweto, Gauteng
+            </p>
+
+            <p>
+                
+                <a href="tel:+27123456789">
+                    +27 12 345 6789
+                </a>
+            </p>
+
+            <p>
+                
+                <a href="mailto:info@kabelosshisanyamagrillhouse.com">
+                    Email Us
+                </a>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 ST10442120
+        </p>
+
+        <p class="footer-tag">
+            Braai with passion · We'd love to hear from you
+        </p>
+
+    </div>
+
+</footer>
+```
+
+</body>
+</html>
